@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToMentor">
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Find your"
+        android:textSize="30sp"
+      app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Mentor"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="Top mentor"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        />
+   <androidx.appcompat.widget.SearchView
+       android:id="@+id/search"
+       android:layout_width="340dp"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/view1"
+       app:layout_constraintStart_toStartOf="parent"
+       android:background="@drawable/search"
+       />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/search"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/equilizer"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button1"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/button2"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="education"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button3"
+        />
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:text="See All"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:layout_marginLeft="30dp"
+        />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:src="@drawable/psychologist"
+        app:layout_constraintTop_toTopOf="@id/txt"
+        app:layout_constraintStart_toStartOf="parent"
+android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/pyscho"/>
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:src="@drawable/psycho1"
+        app:layout_constraintTop_toTopOf="@id/txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/pyscho"/>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:translationY="-56dp"
+        android:text="WILSON VETRA               psychology                                                                $25/1hr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button1"/>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:translationY="-56dp"
+        android:text="JAYLON VACCARO               psychology                                                                $25/1hr"
+        app:layout_constraintTop_toBottomOf="@+id/img2"
+
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
